@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: 10.x
     - name: npm install
+      run: npm i -D ali-oss-publish
       run: npm ci
     - name: build data
       run: node scripts/build-origin.js

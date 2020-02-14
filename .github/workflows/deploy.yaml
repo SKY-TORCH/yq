@@ -1,4 +1,4 @@
-name: deploy to aliyun oss
+﻿name: deploy to aliyun oss
 
 on:
   push:
@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       CI: true
-      ACCESS_KEY: ${{ secrets.OSS_KEY_ID }}
-      ACCESS_SECRET: ${{ secrets.OSS_KEY_SECRET }}
+      #ACCESS_KEY: ${{ secrets.OSS_KEY_ID }}
+      #ACCESS_SECRET: ${{ secrets.OSS_KEY_SECRET }}
 
     steps:
     # 切代码到 runner
@@ -32,7 +32,7 @@ jobs:
     - name: npm run build
       run: npm run build
     - name: cp static files to aliyun
-      run: node scripts/upload-oss.js
+      run: node scripts/ali-oss-uploader.js
 
       # 设置阿里云OSS的 id/secret，存储到 github 的 secrets 中
       # - name: setup aliyun oss

@@ -8,7 +8,8 @@ publish(
     bucket: 'sky-torch-yq',
     entry: "build", // defaults to '.'
     // include: /bin|cli|lib|*.js$|\.md$/,
-    exclude: /.DS_Store$/|\.map$,
+    exclude: /.DS_Store/,
+exclude:/(.map)$/,
     mime: filename => {
       if (/\.md$/.test(filename)) {
         return "text/markdown";

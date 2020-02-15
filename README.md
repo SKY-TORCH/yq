@@ -27,12 +27,15 @@ $ npm start
 
 + [使用 AliOSS 部署及加速你的静态网站](https://github.com/shfshanyue/you-dont-need-vps/blob/master/deploy-fe-with-alioss.md)
 
+``` bash
 配置OSS Bucket后，在scripts/ali-oss-uploader.js脚本中修改 参数
 
  id: 您的ID
  secret: 您的Secret秘钥
  region:  OSS区域
  bucket: 实例名称
+```
+
 
 ## 数据来源
 

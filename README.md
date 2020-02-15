@@ -13,17 +13,16 @@
 ## 快速开始
 
 ``` bash
-# 获取数据
-///初始化项目
+#初始化项目
 $ npm ci
 
-///获取资源
+#获取资源
 $ node scripts/build-origin.js
 
-///本地调试开启
+#本地调试开启
 $ npm start
 
-///阿里Bucket上传 ps：记得修改参数
+#阿里Bucket上传 ps：记得修改参数
 $node scripts/aoli-oss-uploader.js
 ```
 
